@@ -1,0 +1,225 @@
+body {
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px auto 40px;
+}
+
+table {
+    margin: 20px auto;
+}
+
+.tbl-r02 th {
+    background: #e9727e;
+    border: solid 1px #ccc;
+    color: #fff;
+    padding: 10px;
+}
+
+.tbl-r02 td {
+    border: solid 1px #ccc;
+    padding: 10px;
+    width: auto;
+}
+
+@media screen and (max-width: 640px) {
+    .last td:last-child {
+        border-bottom: solid 1px #ccc;
+        width: 100%;
+    }
+    .tbl-r02 {
+        width: 80%;
+    }
+    .tbl-r02 th, .tbl-r02 td {
+        border-bottom: none;
+        display: block;
+        width: 100%;
+    }
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px auto 40px;
+}
+
+table {
+    margin: 20px auto;
+}
+
+.tbl-r02 th {
+    background: #e9727e;
+    border: solid 1px #ccc;
+    color: #fff;
+    padding: 10px;
+}
+
+.tbl-r02 td {
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    .last td:last-child {
+        border-bottom: solid 1px #ccc;
+        width: 100%;
+    }
+    .tbl-r02 {
+        width: 80%;
+    }
+    .tbl-r02 th, .tbl-r02 td {
+        border-bottom: none;
+        display: block;
+        width: 100%;
+    }
+}
+
+.detail-box {
+    display: none;
+}
+
+.box1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 60px;
+    background: rgba(0, 0, 0, .8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.box1 h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.box1 .inputBox {
+    position: relative;
+}
+
+.box1 .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.box1 .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.box1 .inputBox input:focus~label, .box1 .inputBox input:valid~label {
+    top: -18px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.box1 input[type="submit"] {
+    background: transparent;
+    border-bottom: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+select {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+option
+{
+    color: black;
+}
+
+.box1 .inputBox select:focus~label, .box1 .inputBox select:valid~label {
+    top: -18px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.detail-box button {
+    width: 80px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 10px 10px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid #39dfce;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.3em;
+    white-space: normal;
+}
+
+.detail-box button:hover {
+    color: rgb(211, 205, 205) 205, 205;
+    background: #0a8074;
+    transition: 0.5s;
+    border: none;
+}
+.crowd-content button {
+    width: 7em;
+    padding: 10px 0;
+    text-align: center;
+    margin: 10px 10px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid #39dfce;
+    background: #39dfce;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.3em;
+    white-space: normal;
+}
+
+.crowd-content button:hover {
+    color: rgb(211, 205, 205) 205, 205;
+    background: #0a8074;
+    transition: 0.5s;
+    border: none;
+}

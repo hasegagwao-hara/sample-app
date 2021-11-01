@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+/* 掲示板部分 */
+*
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+html
+{
+    background: url(../image/bg-crowd.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kosugi Maru', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.container .card {
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px -5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px -5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #f9fdff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .box {
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #21bfdf, #0f80b4);
+}
+
+.container .card .box .content {
+    padding: 20px;
+    text-align: center
+}
+
+.container .card .box .content h3 {
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card .box .content p {
+    font-size: 1em;
+    font-weight: 300;
+    color: #333;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card:hover .box .content h3, .container .card:hover .box .content p {
+    color: #fff;
+}
+
+/* ナビゲーション部分 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* html {
+    メインの部分の透過具合
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/bg-main.jpg);
+} */
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+}
+
+.banner {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 0.3em;
+}
+
+.logo {
+    width: 20%;
+    height: 20%;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 5px;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #0f0;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    letter-spacing: 0.5em;
+    line-height: 25px;
+}
+
+/* ボタン */
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid #39dfce;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.3em;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+
+    border: none;
+}
+span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+} 
+/* 検索フォーム */
+
+.search_container {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    height: 2.2em;
+    width: 250px;
+    overflow: hidden;
+}
+
+.search_container input[type="text"] {
+    background: transparent;
+    border: 2px solid #39dfce;
+    width: 15em;
+    border-radius: 25px;
+    height: 2.0em;
+    padding-left: 10px;
+}
+
+.search_container input[type="text"]:focus {
+    outline: 0;
+    background: transparent;
+    color: #000;
+}
+
+.search_container input[type="submit"] {
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    border: none;
+    background: none;
+    color: #000;
+    position: absolute;
+    height: 2.5em;
+    right: 4px;
+    top: -10px;
+    outline: none;
+}
+
+.search_container ::-webkit-input-placeholder {
+    color: #fff;
+}
+
+/* ボックス */
+
+.box1, .box2, .log-box, .new-box, .log-box1, .new-box2 {
+    display: none;
+}
+
+.maincontent {
+    text-align: center;
+}
+
+label {
+    color: #000;
+}
+
+/* Aタグ */
+
+.container .card .box .content .btn-box a
+{
+    text-decoration: none;
+    background: #ff4584;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+}
+.container .card .box .content .btn-box a:hover
+{
+    background: #f53677;
+}
+#menu
+{
+    left: 30%;
+}

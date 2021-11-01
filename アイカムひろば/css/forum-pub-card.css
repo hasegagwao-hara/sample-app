@@ -1,0 +1,113 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh;
+    background: #ebf5fc; */
+}
+.container
+{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.container .card
+{
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px -5px rgba(255,255,255,0.5),
+                5px 5px 5px rgba(0,0,0,0.05),
+                -5px -5px -5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+.container .card .box
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebebeb;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.container .card:hover .box
+{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    background: linear-gradient(45deg,#b95ce4,#4f29cd);
+}
+.container .card .box .content
+{
+    padding: 20px;
+    text-align: center
+}
+.container .card .box .content h3
+{
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .card .box .content p
+{
+    overflow: hidden;
+    font-size: 1em;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .card:hover .box .content h3,
+.container .card:hover .box .content p
+{
+    color: #fff;
+}
+.btn-box a
+{
+    text-decoration: none;
+    color:#fff;
+}
+.container .card .box .content button
+{
+    border: none;
+    position: relative;
+    display: inline-flex;
+    padding:  8px 15px;
+    background: #03a9f4;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.container .card:hover .box .content button
+{
+    background: #ff568f;
+}
+.ajax-iine
+{
+
+    margin-top: 20px;
+}
